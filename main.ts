@@ -31,7 +31,7 @@ basic.forever(function () {
     } else if (selection == 2) {
         basic.showIcon(IconNames.Diamond)
         distance = Tinybit.Ultrasonic_Car()
-        if (distance < 0) {
+        if (distance < 15) {
             Tinybit.RGB_Car_Big2(255, 0, 0)
             Tinybit.CarCtrlSpeed(Tinybit.CarState.Car_Back, 100)
             basic.pause(100)
